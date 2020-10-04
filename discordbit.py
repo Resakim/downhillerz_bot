@@ -19,7 +19,7 @@ async def on_ready():
 async def on_message(message):
     if client.user.id != message.author.id:
         if "하위" in message.content:
-               await Bot.send_message(message.channel, '어서오고')
+               await client.send_message(message.channel, '어서오고')
         
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
