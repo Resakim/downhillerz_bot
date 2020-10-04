@@ -17,7 +17,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if client.user.id != message.author.id:
+    #if client.user.id != message.author.id:
         if "하위" in message.content:
                await client.send_message(message.channel, '어서오고')
         
