@@ -9,12 +9,14 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("─────────────────────")
+    await client.change_presence(game=discord.Game(name="산에서 살어리랏다"))
     
 
 @client.event
 async def on_message(message):
     if message.content.startswith("!안녕"):
         await client.send_message(message.channel, "안녕하세요")
+        
 
         
 access_token = os.environ["BOT_TOKEN"]
