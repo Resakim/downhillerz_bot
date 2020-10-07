@@ -1,5 +1,4 @@
 import discord
-import asyncio
 
 client = discord.Client()
 
@@ -10,8 +9,8 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("─────────────────────")
-    activity = discord.Game(name="산에서 살어리랏다")
-    await client.change_presence(status=discord.Status.idle, activity=activity)
+    activity = discord.Game(name="Downhillerz")
+    await client.change_presence(status=discord.Status.online, activity=activity)
 
 
 @client.event
