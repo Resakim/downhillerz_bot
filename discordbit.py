@@ -1,5 +1,4 @@
 import discord
-import os
 
 
 client = discord.Client()
@@ -15,12 +14,7 @@ async def on_ready():
     await client.change_presence(status=discord.Status.online, activity=activity)
 
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
-    if "하위" in message.content:
-        await message.channel.send("안녕하세요")
+
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
