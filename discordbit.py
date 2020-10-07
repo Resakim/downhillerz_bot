@@ -9,10 +9,18 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("─────────────────────")
-    game = discord.Game("산에서 살어리랏다")
-    await client.change_presence(status=discord.Status.online, activity=game)
-    #await client.change_presence(activity=discord.Game(name="산에서 살어리랏다"))
-    #await client.change_presence(game=discord.Game(name='산에서 살어리랏다', type=1))
+    activity = discord.Game(name="산에서 살어리랏다")
+    await client.change_presence(status=discord.Status.idle, activity=activity)
+
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if "하위" in message.content:
+        await message.channel.send("안녕하세요")
+
     
 
         
