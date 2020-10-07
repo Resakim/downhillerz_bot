@@ -17,9 +17,13 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-
-    if "하위" in message.content:
-        await message.channel.send("안녕하세요")
+    response_1 = [
+        "서버 열",
+        "서버 언",
+        "서버언"]
+    for ask_1 in response_1:
+        if ask_1 in message.content:
+            await message.channel.send("안녕하세요 서버 오픈 관련은 #📈server-status 채널을 참고해주세요")
 
     
 
