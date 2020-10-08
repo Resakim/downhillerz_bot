@@ -23,7 +23,7 @@ async def on_message(message):
         "서버언"]
     for ask_1 in response_1:
         if ask_1 in message.content:
-            await message.channel.send("안녕하세요 서버 오픈 관련은 #📈server-status 채널을 참고해주세요")
+            await message.channel.send("안녕하세요 {0.author.mention}님 서버 오픈 관련은 #📈server-status 채널을 참고해주세요")
 
     
 
