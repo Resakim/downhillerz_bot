@@ -26,8 +26,8 @@ async def on_message(message):
         await message.channel.send("헤위~")
     if "어이" in message.content:
         await message.channel.send("{0.author.name} 어서 오고".format(message))
-    if "ㅋㅋㅋㅋㅋㅋ" in message.content:
-        await message.channel.send("ㅋㅋㅋㅋㅋㅋㅋ")
+    if "ㅋㅋㅋㅋㅋㅋㅋㅋㅋ" in message.content:
+        await message.channel.send("ㅋㅋㅋㅋㅋㅋㅋㅋㅋ")
     if "수듄" in message.content:
         await message.channel.send("수듄~")
     response_1 = [
