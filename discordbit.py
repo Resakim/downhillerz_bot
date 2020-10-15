@@ -24,12 +24,16 @@ async def on_message(message):
         await message.channel.send(embed=embed)
     if "하위" in message.content:
         await message.channel.send("헤위~")
+        return
     if "어이" in message.content:
         await message.channel.send("{0.author.name} 어서 오고".format(message))
+        return
     if "ㅋㅋㅋㅋㅋㅋㅋㅋㅋ" in message.content:
         await message.channel.send("ㅋㅋㅋㅋㅋㅋㅋㅋㅋ")
+        return
     if "수듄" in message.content:
         await message.channel.send("수듄~")
+        return
     response_1 = [
         "서버 열",
         "서버 언",
@@ -38,6 +42,7 @@ async def on_message(message):
         if ask_1 in message.content:
             server_status_channel = client.get_channel(615468836753375242)#서버 온/오프 채널
             await message.channel.send("안녕하세요 {0.author.mention}님 서버 오픈 관련은 {1.mention} 채널을 참고해주세요".format(message,server_status_channel))
+            return
 
     
 
