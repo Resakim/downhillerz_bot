@@ -25,6 +25,13 @@ async def on_message(message):
         await message.channel.send("ㅋㅋㅋㅋㅋㅋㅋ")
     if "수듄" in message.content:
         await message.channel.send("수듄~")
+    if "!글로벌밴" in message.content:
+        await message.channel.send(":warning: 글로벌 밴 조치 방법
+
+        다운힐러즈는 FiveM 글로벌 밴에 대하여 논의 할 수 없습니다.
+        FiveM 자체 내에서 지정한 추방이므로, FiveM 커뮤니티의 가이드라인 미준수나
+        이유 없음에 해당 됩니다. 만약 잘못된 조치라고 생각한다면,
+        https://forum.cfx.re/w/ban-report 으로 양식을 제출하시면 됩니다.")
     response_1 = [
         "서버 열",
         "서버 언",
