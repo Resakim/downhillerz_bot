@@ -37,7 +37,8 @@ async def on_message(message):
     response_1 = [
         "서버 열",
         "서버 언",
-        "서버언"]
+        "서버언",
+        "열었"]
     for ask_1 in response_1:
         if ask_1 in message.content:
             server_status_channel = client.get_channel(615468836753375242)#서버 온/오프 채널
