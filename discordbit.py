@@ -5,8 +5,6 @@ import os
 
 client = discord.Client()
 
-@Client.event
-
 @client.event
 async def on_ready():
     print("login")
