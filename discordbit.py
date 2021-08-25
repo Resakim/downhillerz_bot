@@ -7,9 +7,14 @@ client = discord.Client()
 
 @Client.event
 
+@client.event
 async def on_ready():
     print("login")
-    await client.change_presence(game=discord.Game(name='', type=1))
+    print(client.user.name)
+    print(client.user.id)
+    print("─────────────────────")
+    activity = discord.Game(name="집에서 교육")
+    await client.change_presence(status=discord.Status.online, activity=activity)
     
 
 
