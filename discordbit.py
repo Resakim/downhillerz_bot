@@ -21,7 +21,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith("!신고ㅤ"):
+    if message.content.startswith("!신고1"):
         embed = discord.Embed(title= "🚨 Report (신고) 가이드라인", description = "\n\u200b", color = 0xff2e2e)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/646497500299001876/879965785374740480/downhillerz_logo2.png")
         embed.add_field(name="1️⃣ 신고 대상자가 명확해야 합니다", value="채팅, 인게임 닉네임은 관리자가 식별할 수 있어야 합니다.\n\u200b", inline=False)
@@ -38,7 +38,7 @@ async def on_message(message):
         embed.set_footer(text="⒞ Downhillerz")
         await message.channel.send(embed=embed)
     
-    if message.content.startswith("!신고2ㅤ"):
+    if message.content.startswith("!신고2"):
         embed = discord.Embed(title= "🚨 Report (신고) 가이드라인", description = "\n\u200b", color = 0xff2e2e)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/646497500299001876/879965785374740480/downhillerz_logo2.png")
         
