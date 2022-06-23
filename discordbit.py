@@ -21,7 +21,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith("!신고"):
+    if message.content.startswith("!신고ㅤ"):
         embed = discord.Embed(title= "🚨 Report (신고) 가이드라인", description = "\n\u200b", color = 0xff2e2e)
         embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/646497500299001876/879965785374740480/downhillerz_logo2.png")
         embed.add_field(name="1️⃣ 신고 대상자가 명확해야 합니다", value="채팅, 인게임 닉네임은 관리자가 식별할 수 있어야 합니다.\n\u200b", inline=False)
@@ -35,6 +35,17 @@ async def on_message(message):
         embed.add_field(name="🔸신고 대상자가 사과했음에도 받아들여지지 않은 경우", value='(사과의 진정성, 사건의 종결 상황에 따라 다를 수 있음)\n\u200b', inline=False)
         embed.add_field(name="🔸패시브 모드(Passive)를 비활성화한 차량 충돌", value='(주행로 외 주차된 차량을 고의로 파손한 행위는 제외)\n\u200b', inline=False)
         embed.add_field(name="🔸관리자에게 불필요한 언행, 행동으로 분쟁 유발", value='\u200b', inline=False)
+        embed.set_footer(text="⒞ Downhillerz")
+        await message.channel.send(embed=embed)
+    
+    if message.content.startswith("!신고2ㅤ"):
+        embed = discord.Embed(title= "🚨 Report (신고) 가이드라인", description = "\n\u200b", color = 0xff2e2e)
+        embed.set_thumbnail(url= "https://cdn.discordapp.com/attachments/646497500299001876/879965785374740480/downhillerz_logo2.png")
+        
+        embed.add_field(name="📩 신고 방법은 아래를 참고해주세요", value='\u200b', inline=False)
+        embed.add_field(name="1. 신고대상: ", value='\u200b', inline=False)
+        embed.add_field(name="2. 신고내용: ", value='\u200b', inline=False)
+        embed.add_field(name="3. 증거자료: ", value='(스크린샷 또는 영상)\n\u200b', inline=False)
         embed.set_footer(text="⒞ Downhillerz")
         await message.channel.send(embed=embed)
 
